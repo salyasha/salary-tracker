@@ -1,22 +1,22 @@
-/* Контейнер layout */
+/* Стили layout */
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--color-bg);
 }
 
-/* Основной контент */
 .main {
   flex: 1;
-  width: 100%;
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
   padding: var(--spacing-lg);
+  width: 100%;
 }
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   .main {
-    padding: var(--spacing-sm);
+    padding: var(--spacing-md);
   }
 }
